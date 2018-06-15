@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    margin: 5vh 0;
+    border-bottom: solid 1px;
+}
+
+.gallery .row img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.form-group label {
+    font-size: smaller;
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery img {
+        margin: 2px 0;
+    }
+}
