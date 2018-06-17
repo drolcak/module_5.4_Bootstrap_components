@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
+}
 
 body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -20,6 +22,18 @@ section {
 
 .form-group label {
     font-size: smaller;
+}
+
+nav img {
+    max-height: 45px;
+} /* nie umiem przesunąć nav-item do lewej*/
+
+
+.jumbotron {
+    background-image: url("https://images.pexels.com/photos/34676/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    color: #ffffff;
+    height: 70vh;
+    margin: 1% 0;
 }
 
 @media only screen and (max-width: 768px) {

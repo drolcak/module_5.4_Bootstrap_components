@@ -2,151 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>module 5.3 Bootstrap simple page</title>
+    <title>module 5.4 Bootstrap components</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-<section class="about-me">
-    <div class="container">
-        <div class="row">
-            <h1 class="text-center col-12">Hello<br><small>I am Piotr Malżycki</small></h1>
-            <h5 class="text-center col-12">Runner, Junior Developer (I HOPE!)</h5>
-            <button type="button" class="btn btn-primary btn-lg col-4 offset-4 ">Say Hello</button>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="rounded-circle" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b10ee115428051.56290faf74b84.jpg"></a>
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#table">Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Go</button>
+            </form>
         </div>
-    </div>
-</section>
-
-<section class="gallery">
-    <div class="container">
-        <div class="header">
-            <h1 class="col-12 text-center text-uppercase">Gallery</h1>
+    </nav>
+    <section class="about-me jumbotron">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center col-12">Hello<br><small>I am Piotr Malżycki</small></h1>
+                <h5 class="text-center col-12">Runner, Junior Developer (I HOPE!)</h5>
+                <button type="button" class="btn btn-primary btn-lg col-4 offset-4 ">Say Hello</button>
+            </div>
         </div>
+    </section>
 
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <img src="https://images.pexels.com/photos/1159343/pexels-photo-1159343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=550&w=300" alt="skyscrapper photo" class="img-responsive">
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="header">
+                <h1 class="col-12 text-center text-uppercase">Gallery</h1>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <img src="https://images.pexels.com/photos/977374/pexels-photo-977374.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="human photo" class="img-responsive">
-            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="https://images.pexels.com/photos/1159343/pexels-photo-1159343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=550&w=300" alt="skyscrapper photo" class="img-responsive img-thumbnail">
+                </div>
 
-            <img src="https://images.pexels.com/photos/50704/car-race-ferrari-racing-car-pirelli-50704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="car photo" class="col-md-3 col-sm-6 col-xs-12 img-responsive">
-            <img src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1511861904000/photosp/0f0e4fac-113d-4dec-a8d8-bb11951fa9a7/stock-photo-daytime-nature-nobody-outdoors-grass-fragility-growth-shadow-water-0f0e4fac-113d-4dec-a8d8-bb11951fa9a7.jpg" alt="road photo" class="col-md-3 col-sm-6 col-xs-12 img-responsive">
-        </div>
-    </div>
-</section>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="https://images.pexels.com/photos/977374/pexels-photo-977374.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="human photo" class="img-responsive img-thumbnail">
+                </div>
 
-<section class="table">
-    <div class="container">
-        <div class="table-responsive">
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th>LP</th>
-                    <th>Imię</th>
-                    <th>Nazwisko</th>
-                    <th>Wiek</th>
-                    <th>Miasto</th>
-                    <th>Kraj</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Piotr</td>
-                    <td>Kowalski</td>
-                    <td>35</td>
-                    <td>Warszawa</td>
-                    <td>Polska</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Jan</td>
-                    <td>Kowalski</td>
-                    <td>38</td>
-                    <td>Kraków</td>
-                    <td>Polska</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Cristiano</td>
-                    <td>Ronaldo</td>
-                    <td>25</td>
-                    <td>Madryt</td>
-                    <td>Hiszpania</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Andrzej</td>
-                    <td>Nowak</td>
-                    <td>35</td>
-                    <td>Zakopane</td>
-                    <td>Polska</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="https://images.pexels.com/photos/50704/car-race-ferrari-racing-car-pirelli-50704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="car photo" class="img-responsive img-thumbnail">
+                </div>
 
-<section class="contact-form">
-    <div class="container">
-        <h2>Skontaktuj się ze mną</h2>
-        <form class="form-horizontal" action="/form_page.php">
-
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Email:</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" placeholder="Wpisz adres email">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1511861904000/photosp/0f0e4fac-113d-4dec-a8d8-bb11951fa9a7/stock-photo-daytime-nature-nobody-outdoors-grass-fragility-growth-shadow-water-0f0e4fac-113d-4dec-a8d8-bb11951fa9a7.jpg" alt="road photo" class="img-responsive img-thumbnail">
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="pwd">Hasło:</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="pwd" placeholder="Wpisz hasło">
-                </div>
+    <section class="table" id="table">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>LP</th>
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                        <th>Wiek</th>
+                        <th>Miasto</th>
+                        <th>Kraj</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Piotr</td>
+                        <td>Kowalski</td>
+                        <td>35</td>
+                        <td>Warszawa</td>
+                        <td>Polska</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jan</td>
+                        <td>Kowalski</td>
+                        <td>38</td>
+                        <td>Kraków</td>
+                        <td>Polska</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Cristiano</td>
+                        <td>Ronaldo</td>
+                        <td>25</td>
+                        <td>Madryt</td>
+                        <td>Hiszpania</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Andrzej</td>
+                        <td>Nowak</td>
+                        <td>35</td>
+                        <td>Zakopane</td>
+                        <td>Polska</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
+        </div>
+    </section>
 
-            <div class="form-group">
-                <label class="col-sm-2" for="FormControlSelect">Wybierz kategorię</label>
-                <div class="col-sm-10">
-                    <select class="form-control" id="formControlSelect">
-                        <option>Propozycja współpracy</option>
-                        <option>Wycena projektu</option>
-                        <option>Powiedzieć Hello</option>
-                        <option>Dziś piątek!</option>
-                    </select>
-                </div>
-            </div>
+    <section class="contact-form" id="contact">
+        <div class="container">
+            <h2>Skontaktuj się ze mną</h2>
+            <form class="form-horizontal" action="/form_page.php">
 
-            <div class="form-group">
-                <div class="col-sm-10">
-                    <label for="comment">Wiadomość:</label>
-                    <textarea class="form-control" rows="6" id="comment"></textarea>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                    <div class="checkbox">
-                        <label><input type="checkbox">Zapamiętaj mnie</label>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Wpisz adres email">
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Wyślij</button>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Hasło:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="pwd" placeholder="Wpisz hasło">
+                    </div>
                 </div>
-            </div>
-        </form>
-    </div>
-</section>
+
+                <div class="form-group">
+                    <label class="col-sm-2" for="formControlSelect">Wybierz kategorię</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="formControlSelect">
+                            <option>Propozycja współpracy</option>
+                            <option>Wycena projektu</option>
+                            <option>Powiedzieć Hello</option>
+                            <option>Dziś piątek!</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <label for="comment">Wiadomość:</label>
+                        <textarea class="form-control" rows="6" id="comment"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label><input type="checkbox">Zapamiętaj mnie</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Wyślij</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
