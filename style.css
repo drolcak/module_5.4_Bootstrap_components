@@ -5,12 +5,12 @@
 body {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 55px 0 0 0;
     font-family: 'Open Sans', sans-serif;
 }
 
 section {
-    margin: 5vh 0;
+    padding: 5vh 0;
     border-bottom: solid 1px;
 }
 
@@ -26,12 +26,10 @@ section {
 
 nav img {
     max-height: 45px;
-} /* nie umiem przesunąć nav-item do lewej*/
+}
 
-/* contact me - jak wyśrodkować w pionie*/
-/* dlaczego nie działa offset w newsfeedzie*/
-/* do czego używasz bootstrapa*/
-/* jak wyśrodkować text w jumbotronie*/
+/* dlaczego nie działa offset w newsfeedzie -zła nazwa klasy*/
+
 
 .jumbotron {
     background-image: url("https://images.pexels.com/photos/34676/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -39,6 +37,7 @@ nav img {
     height: 70vh;
     margin: 1% 0;
     object-fit: cover;
+    align-items: center;
 }
 
 .media-object img {
@@ -55,6 +54,10 @@ footer {
         margin: 2px 0;
     }
 
+    body {
+        padding-top: 200px;
+    }
+
     nav img {
         display: none;
     }
@@ -67,6 +70,5 @@ footer {
         display: block;
         width: 100%;
         text-align: center;
-
     }
 }

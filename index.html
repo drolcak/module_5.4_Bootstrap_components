@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img class="rounded-circle" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b10ee115428051.56290faf74b84.jpg"></a>
-            <ul class="nav">
+            <ul class="nav mr-auto navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#gallery">Gallery</a>
                 </li>
@@ -39,12 +39,14 @@
             </form>
         </div>
     </nav>
-    <section class="about-me jumbotron">
-        <div class="container" id="about">
-            <div class="row">
-                <h1 class="text-center col-sm-12">Hello<br><small>I am Piotr Malżycki</small></h1>
-                <h5 class="text-center col-sm-12">Runner, Junior Developer (I HOPE!)</h5>
-                <button type="button" class="btn btn-primary btn-lg col-4 offset-4 ">Say Hello</button>
+    <section class="about-me jumbotron align-items-center d-flex">
+        <div class="container " id="about">
+            <div class="row justify-content-center">
+                <div class="text-group text-center">
+                    <h1 class="col-sm-12">Hello<br><small>I am Piotr Malżycki</small></h1>
+                    <h5 class="col-sm-12">Runner, Junior Developer (I HOPE!)</h5>
+                    <button type="button" class="btn btn-primary btn-lg ">Say Hello</button>
+                </div>
             </div>
         </div>
     </section>
@@ -131,7 +133,7 @@
     <section class="media-object" id="newsfeed">
         <div class="container mt-3">
             <h2>News feed</h2>
-            <div class="media border p-4">
+            <div class="media border p-4 d-flex">
                 <img src="https://vignette.wikia.nocookie.net/fallout/images/6/65/Freeman_Avatar.jpg/revision/latest?cb=20090628213204" alt="Avatar media" class="mr-3 mt-3 rounded-circle">
                 <div class="media-body">
                     <h4>Piotr Malżycki<small><i> posted 17 June, 2018 </i></small> <span class="badge badge-warning">New</span></h4>
@@ -152,7 +154,7 @@
 
     <section class="contact-form">
         <div class="container">
-            <button class="btn btn-danger active mb-3" data-toggle="collapse" data-target="#contact">Contact me</button>
+            <button class="btn btn-danger active" data-toggle="collapse" data-target="#contact">Contact me</button>
             <form class="form-horizontal collapse" action="/form_page.php" id="contact">
                 <h2>Contact form</h2>
                 <div class="form-group">
@@ -189,7 +191,7 @@
                 </div>
 
                 <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
+                    <div class="col-sm-10">
                         <div class="checkbox">
                             <label><input type="checkbox">Zapamiętaj mnie</label>
                         </div>
@@ -197,7 +199,7 @@
                 </div>
 
                 <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
+                    <div class="col-sm-10">
                         <button type="submit" class="btn btn-default">Wyślij</button>
                     </div>
                 </div>
