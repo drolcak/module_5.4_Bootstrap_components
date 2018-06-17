@@ -29,11 +29,16 @@ nav img {
 } /* nie umiem przesunąć nav-item do lewej*/
 
 /* contact me - jak wyśrodkować w pionie*/
+/* dlaczego nie działa offset w newsfeedzie*/
+/* do czego używasz bootstrapa*/
+/* jak wyśrodkować text w jumbotronie*/
+
 .jumbotron {
     background-image: url("https://images.pexels.com/photos/34676/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     color: #ffffff;
     height: 70vh;
     margin: 1% 0;
+    object-fit: cover;
 }
 
 .media-object img {
@@ -48,5 +53,20 @@ footer {
 @media only screen and (max-width: 768px) {
     .gallery img {
         margin: 2px 0;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav .form-inline {
+        display: none;
+    }
+
+    nav li {
+        display: block;
+        width: 100%;
+        text-align: center;
+
     }
 }
