@@ -28,12 +28,21 @@ nav img {
     max-height: 45px;
 } /* nie umiem przesunąć nav-item do lewej*/
 
-
+/* contact me - jak wyśrodkować w pionie*/
 .jumbotron {
     background-image: url("https://images.pexels.com/photos/34676/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     color: #ffffff;
     height: 70vh;
     margin: 1% 0;
+}
+
+.media-object img {
+    max-width: 75px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 @media only screen and (max-width: 768px) {

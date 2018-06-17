@@ -11,9 +11,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img class="rounded-circle" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b10ee115428051.56290faf74b84.jpg"></a>
             <ul class="nav justify-content-start">
@@ -21,7 +21,13 @@
                     <a class="nav-link" href="#gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#about">About me</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#table">Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#newsfeed">Newsfeed</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -34,7 +40,7 @@
         </div>
     </nav>
     <section class="about-me jumbotron">
-        <div class="container">
+        <div class="container" id="about">
             <div class="row">
                 <h1 class="text-center col-12">Hello<br><small>I am Piotr Malżycki</small></h1>
                 <h5 class="text-center col-12">Runner, Junior Developer (I HOPE!)</h5>
@@ -43,8 +49,8 @@
         </div>
     </section>
 
-    <section class="gallery" id="gallery">
-        <div class="container">
+    <section class="gallery">
+        <div class="container" id="gallery">
             <div class="header">
                 <h1 class="col-12 text-center text-uppercase">Gallery</h1>
             </div>
@@ -69,8 +75,8 @@
         </div>
     </section>
 
-    <section class="table" id="table">
-        <div class="container">
+    <section class="table">
+        <div id="table" class="container">
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead>
@@ -122,11 +128,33 @@
         </div>
     </section>
 
-    <section class="contact-form" id="contact">
-        <div class="container">
-            <h2>Skontaktuj się ze mną</h2>
-            <form class="form-horizontal" action="/form_page.php">
+    <section class="media-object" id="newsfeed">
+        <div class="container mt-3">
+            <h2>News feed</h2>
+            <div class="media border p-4">
+                <img src="https://vignette.wikia.nocookie.net/fallout/images/6/65/Freeman_Avatar.jpg/revision/latest?cb=20090628213204" alt="Avatar media" class="mr-3 mt-3 rounded-circle">
+                <div class="media-body">
+                    <h4>Piotr Malżycki<small><i> posted 17 June, 2018 </i></small> <span class="badge badge-warning">New</span></h4>
+                    <p>To all of you great web applications developers. Please, share where do you grab the latest news on this subject: cool blogs, articles, podcasts etc. related to web-based applications development. Help to rate those resouces from the most interesting to least.</p>
+                </div>
+            </div>
 
+                <div class="media border p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFBDY5rDzdywp_4x7Sc-8NZMALk32_63b7x7yYqloc3SS-cthc" alt="Avatar media" class="mr-3 mt-3 rounded-circle">
+                    <div class="media-body">
+                        <h4>Jan Kowalski<small><i> posted 16 June, 2018</i></small></h4>
+                        <p>Meet the all-new Avocode 3<br> Avocode 3 is a platform-independent tool that helps you share, access and inspect design source files.</p>
+                        <a class="btn btn-success active col-sm-4" href="https://avocode.com" target="_blank" role="button">Try it now</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <button class="btn btn-danger active mb-3" data-toggle="collapse" data-target="#contact">Contact me</button>
+            <form class="form-horizontal collapse" action="/form_page.php" id="contact">
+                <h2>Contact form</h2>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="email">Email:</label>
                     <div class="col-sm-10">
@@ -176,5 +204,11 @@
             </form>
         </div>
     </section>
+
+    <footer class="page-footer bottom-fix">
+        <div class="footer-copyright text-center p-3">© 2018 Copyright:
+            <a href="#">Piotr Malżycki</a>
+        </div>
+    </footer>
 </body>
 </html>
